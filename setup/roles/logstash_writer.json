@@ -1,0 +1,55 @@
+{
+  "cluster": [
+    "manage_index_templates",
+    "monitor",
+    "manage_ilm",
+    "read_ilm"
+  ],
+  "indices": [
+    {
+      "names": [
+        "logs-generic-default",
+        "logstash-*",
+        "ecs-logstash-*"
+        "cdr_asterisk-*"
+        
+       
+      ],
+      "privileges": [
+        "write",
+        "create",
+        "create_index",
+        "manage",
+        "manage_ilm",
+        "create_doc",
+        "view_index_metadata",
+        
+      ]
+    },
+    {
+      "names": [
+        "logstash",
+        "ecs-logstash"
+        
+      ],
+      "privileges": [
+        "write",
+        "manage"
+      ]
+    },
+    {
+    	"names" :[
+    	 "cdr_asterisk"
+    	],
+    	"privileges": [
+    	"auto_configure",
+    	"create_index",
+    	"manage",
+    	"write",
+    	"all"
+    	]
+    
+    }
+  ]
+}
+
